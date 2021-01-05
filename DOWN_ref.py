@@ -7,7 +7,7 @@ l.append('X')
 l.append('Y')
   
 for i in l:
-    cmd = 'wget http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/c    hr{}.fa.gz'.format(i)
+    cmd = 'wget http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/chr{}.fa.gz'.format(i)
     os.system(cmd)
 for i in l:    
     cmd2 = 'cat chr{} >> hg19.fa'.format(i)
